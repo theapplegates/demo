@@ -31,9 +31,29 @@ There is no `f_auto`. `q_auto` remains enabled for image quality. The browser ch
    npm run cloudinary:breakpoints -- "src/images/blog/photo.jpg" --alt="Describe your photo"
    ```
 
+```bash
+npm run cloudinary:breakpoints -- "src/images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash.jpg" --alt="A pretty wooden vase"
+npm notice run my-portfolio@0.0.1 cloudinary:breakpoints
+npm notice run node scripts/cloudinary-breakpoints.mjs src/images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash.jpg --alt=A pretty wooden vase
+Uploading "images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash" in paulapplegate-com; requesting JXL, AVIF and WebP breakpoints...
+Saved src/data/cloudinary-images.json. Paste this into a Markdown post:
+
+<cloudinary-picture src="images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash" cloud-name="paulapplegate-com" alt="A pretty wooden vase" width="3600" height="5400" sizes="(max-width: 720px) calc(100vw - 3rem), 672px"></cloudinary-picture>
+
+For a post cover, use:
+coverImage: "images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash"
+coverAlt: "A pretty wooden vase"
+coverCloudName: "paulapplegate-com"
+```
+
+
+
+
+
+
    This uploads as public ID `images/blog/photo`, asks Cloudinary to analyze **each format separately**, and saves its returned widths in `src/data/cloudinary-images.json`. No Sharp conversion is used. Cloudinary retains the generated breakpoint variants; this uses your Cloudinary transformation/storage allowance. Run uploads one at a time, including in batch loops.
 
-5. Copy the `<cloudinary-picture ...></cloudinary-picture>` snippet printed by the command into a `.md` post under `src/content/blog/`. Keep a blank line before and after it. **No import and no MDX conversion are needed.** Restart the dev server after generating a new manifest entry if it is already running.
+6. Copy the `<cloudinary-picture ...></cloudinary-picture>` snippet printed by the command into a `.md` post under `src/content/blog/`. Keep a blank line before and after it. **No import and no MDX conversion are needed.** Restart the dev server after generating a new manifest entry if it is already running.
 
    Once an image is in the manifest, this shorter Markdown form also works:
 
@@ -43,7 +63,7 @@ There is no `f_auto`. `q_auto` remains enabled for image quality. The browser ch
 
    That shorthand uses the configured default cloud. The printed HTML snippet includes the specific cloud name, dimensions, and sizes explicitly.
 
-6. To use the photo as a cover, copy the three frontmatter lines printed by the command:
+7. To use the photo as a cover, copy the three frontmatter lines printed by the command:
 
    ```yaml
    coverImage: "images/blog/photo"
@@ -53,7 +73,7 @@ There is no `f_auto`. `q_auto` remains enabled for image quality. The browser ch
 
    Cards, post heroes, and the transformation showcase automatically use that cover and its saved breakpoint widths.
 
-7. Preview and verify:
+8. Preview and verify:
 
    ```bash
    npm run dev
