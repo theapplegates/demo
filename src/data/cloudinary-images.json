@@ -262,40 +262,16 @@
       ]
     }
   },
-<<<<<<< HEAD
-  "paulapplegate-com/images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash": {
-    "publicId": "images/blog/volodymyr-lymariev-N7yu3wLuuPQ-unsplash",
-    "cloudName": "paulapplegate-com",
-    "width": 3600,
-    "height": 5400,
-    "version": 1790369882,
-=======
   "paulapplegate-com/images/blog/nenad-radojcic-kIQoxt8-srU-unsplash": {
     "publicId": "images/blog/nenad-radojcic-kIQoxt8-srU-unsplash",
     "cloudName": "paulapplegate-com",
     "width": 5073,
     "height": 7609,
     "version": 1789951542,
->>>>>>> 98560e2202720c5242a269cfa86893996347377e
     "sizes": "(max-width: 720px) calc(100vw - 3rem), 672px",
     "widths": {
       "jxl": [
         50,
-<<<<<<< HEAD
-        396,
-        603,
-        776,
-        777,
-        1262,
-        1347,
-        1416,
-        1500,
-        1585,
-        1697,
-        1782,
-        1833,
-        1883,
-=======
         393,
         616,
         738,
@@ -312,21 +288,10 @@
         1851,
         1911,
         1914,
->>>>>>> 98560e2202720c5242a269cfa86893996347377e
         1920
       ],
       "avif": [
         50,
-<<<<<<< HEAD
-        408,
-        615,
-        841,
-        1064,
-        1275,
-        1476,
-        1736,
-        1915,
-=======
         419,
         611,
         741,
@@ -340,27 +305,10 @@
         1702,
         1806,
         1917,
->>>>>>> 98560e2202720c5242a269cfa86893996347377e
         1920
       ],
       "webp": [
         50,
-<<<<<<< HEAD
-        428,
-        641,
-        829,
-        892,
-        1038,
-        1168,
-        1287,
-        1395,
-        1519,
-        1529,
-        1809,
-        1890,
-        1907,
-        1915,
-=======
         447,
         609,
         728,
@@ -377,7 +325,6 @@
         1736,
         1807,
         1870,
->>>>>>> 98560e2202720c5242a269cfa86893996347377e
         1920
       ]
     }
